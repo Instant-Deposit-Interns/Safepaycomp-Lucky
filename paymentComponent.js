@@ -16,9 +16,8 @@ const onClick = () => {
 };
 
 // state for the options
-const [options, setOptions]= React.useState([]);
-
-  
+const [options, setOptions] = React.useState([])
+// checking for length of characters
 function chars(e){
   let input = e.target.value
   if (input.length == 7 ){
@@ -28,25 +27,22 @@ function chars(e){
 };
 
 // getting api from json file
-function getJson(){
-  fetch('./data.json',
+// function getJson(){
+//   fetch('./data.json',
   
-    {headers : { 
-      'Content-Type': 'application/json',
-      'Accept': 'application/json'
-     }
-    }
-  ).then(
-    function(response){
-      // console.log(response.json())
-      setOptions(response.json()) 
-      // console.log(options);
-    });
-}
-getJson()
-React.useEffect(()=>{
-  getJson()
-}, [])
+//     {headers : { 
+//       'Content-Type': 'application/json',
+//       'Accept': 'application/json'
+//      }
+//     }
+//   ).then(
+//     function(response){
+//       // console.log(response.json())
+//       setOptions(response.json()) 
+//       // console.log(options);
+//     });
+// }
+
   
     return (
       <div className="col-md-6 col-sm-12 col-xs-12" style={{width:"100%"}}>
@@ -58,10 +54,6 @@ React.useEffect(()=>{
                            <label>Select your payment</label>
 
                            <select className="form-select form-input" style={{color:"black"}}>
-                              {options.map((option)=> <option>{option.title}</option>)}
-                             </select>
-
-                           {/* <select className="form-select form-input" style={{color:"black"}}>
                                <option selected>School Fees(Private Schools)</option>
                                <option value="1">Plateau Health Subscription</option>
                                <option value="2">ESUT Payments</option>
@@ -69,7 +61,7 @@ React.useEffect(()=>{
                                <option value="4"> IMT Payments</option>
                                <option value="5"> GOUNI Payments</option>
                                <option value="6"> SafePay Topup</option>
-                             </select> */}
+                             </select>
                            
                        </form>
                    </div>

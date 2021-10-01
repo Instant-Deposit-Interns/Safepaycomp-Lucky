@@ -1,0 +1,39 @@
+{ 
+    "options" : [
+        {
+            "ref_no": "001",
+            "title": "School Fees (Private Schools)",
+            "amount": "35,500"
+        },
+        {
+            "ref_no": "002",
+            "title": "Plateau Health Subscription",
+            "amount": "5,500"
+        },
+        {
+            "ref_no": "003",
+            "title": "ESUT Payments",
+            "amount": "22,500"
+        },
+        {
+            "ref_no": "004",
+            "title": "ESCET Payments",
+            "amount": "32,500"
+        },
+        {
+            "ref_no": "005",
+            "title": "IMT Payments",
+            "amount": "25,500"
+        },
+        {
+            "ref_no": "006",
+            "title": "GOUNI Payments",
+            "amount": "15,500"
+        },
+        {
+            "ref_no": "007",
+            "title": "SafePay Topup",
+            "amount": "1,500"
+        }
+    ]
+}
